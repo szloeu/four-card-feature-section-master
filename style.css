@@ -1,0 +1,138 @@
+:root {
+	/*font-size: 16px; 
+	/*This sets the font-size all over the document. Default: 16px;
+	You can set all other value relative to this value. I mean, this is the easiest way to 
+	changing a whole complex object with changing one value. See bottom the @media block.*/
+}
+
+body, html { 
+    margin: 0;
+    padding: 0;
+    /* Must both parameters set when vertical scrollbar appears with min-height: 100vh. */
+}
+
+body {
+	background-color: hsl(0, 0%, 98%);
+}
+
+html {
+	font-family: 'Poppins', sans-serif;
+	font-size: 0.9375rem;
+	background-color: hsl(0, 0%, 98%);
+}
+
+main {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+#div-upper-inner {
+	width: 30rem;
+}
+
+#div-upper-inner h2, h1, p {
+	text-align: center;
+}
+
+#div-upper-inner h2 {
+	color: hsl(234, 12%, 34%);
+	font-weight: 200;
+	margin: 2rem 0 0;
+	font-size: 2rem;
+}
+
+#div-upper-inner h1 {
+	color: hsl(234, 12%, 34%);
+	font-weight: 600;
+	margin: 0;
+}
+
+#div-upper-inner p {
+	color: hsl(229, 6%, 66%);
+	font-weight: 400;
+	font-size: 0.9rem;
+	margin: 0.5rem 0 1rem;
+}
+
+#div-lower {
+	display: flex;
+	flex-direction: row;
+}
+
+#div-lower-left, #div-lower-middle, #div-lower-right {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+}
+
+.four-box {
+	width: 20rem;
+	height: 14.25rem;
+	background-color: hsl(0, 0%, 100%);
+	margin: 0.7rem;
+	border-radius: 0.35rem;
+	box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}
+
+#div-supervisor {
+	border-top: 0.3rem solid hsl(180, 62%, 55%);
+}
+
+#div-team-builder {
+	border-top: 0.3rem solid hsl(0, 78%, 62%);
+}
+
+#div-karma {
+	border-top: 0.3rem solid hsl(34, 97%, 64%);
+}
+
+#div-calulator {
+	border-top: 0.3rem solid hsl(212, 86%, 64%);
+}
+
+.four-box h3 {
+	margin: 1.7rem 1.8rem 0;
+	color: hsl(234, 12%, 34%);
+}
+
+.four-box p {
+	margin: 0.6rem 1.8rem 0;
+	font-size: 0.77rem;
+	color: hsl(229, 6%, 66%);
+	text-align: left;
+}
+
+.div-picture-box img {
+	float: right;
+	margin-top: 2.5rem;
+    margin-right: 2rem;
+    margin-bottom: 2rem;
+    margin-left: 2rem;
+	width: 3.5rem;
+	height: 3.5rem;
+}
+
+@media (max-width: 950px) {
+
+	#div-upper-inner {
+		width: 22rem;
+	}
+
+	#div-lower {
+		flex-direction: column;
+	}
+
+	#div-upper-inner h2 {
+		font-size: 1.6rem;
+	}
+
+	#div-upper-inner h1 {
+		font-size: 1.6rem;
+	}
+
+	#div-upper-inner p {
+		margin: 0.5rem 0 3rem;
+	}
+
+}
